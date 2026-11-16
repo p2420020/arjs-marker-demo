@@ -21,12 +21,11 @@
       <a-asset-item id="scan" src="nuigurumi.glb"></a-asset-item>
     </a-assets>
 
-    <a-marker type="pattern" url="newmarker.patt">
-      <!-- ライト -->
+    <a-marker type="pattern" url="pattern_nui.patt">
+      
       <a-light type="ambient" intensity="1"></a-light>
       <a-light type="directional" position="1 2 1" intensity="1"></a-light>
-
-      <!-- スキャンしたぬいぐるみ -->
+      
       <a-entity gltf-model="#scan"
                 position="0 -1.5 0"
                 rotation="0 0 0"

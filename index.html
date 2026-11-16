@@ -18,6 +18,20 @@
   <a-assets>
     <a-asset-item id="scan" src="nuigurumi.glb"></a-asset-item>
   </a-assets>
+
+
+  <!-- 確認用の赤い箱 -->
+  <a-box position="0 0.5 0" color="#FF0000" opacity="0.5"></a-box>
+
+  <!-- ライト（モデルが真っ黒にならないように） -->
+  <a-light type="ambient" intensity="1"></a-light>
+  <a-light type="directional" position="1 2 1" intensity="1"></a-light>
+
+  <a-entity gltf-model="#scan"
+            position="0 0 0"
+            rotation="0 0 0"
+            scale="1 1 1"></a-entity>
+    
     
     <a-marker type="pattern" url="newmarker.patt"> 
       <a-entity gltf-model="#scan"
